@@ -1,0 +1,26 @@
+{
+    "image_size": [
+        224,
+        224
+    ],
+    "channels": 3,
+    "normalization": "pixel_value / 255.0",
+    "gaussian_blur": {
+        "kernel": [
+            5,
+            5
+        ],
+        "sigma": 0
+    },
+    "clahe": {
+        "clip_limit": 2.0,
+        "tile_grid_size": [
+            8,
+            8
+        ]
+    },
+    "classes": {
+        "0": "BENIGN",
+        "1": "MALIGNANT"
+    }
+}
